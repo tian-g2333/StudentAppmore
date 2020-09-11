@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+底部菜单的布局文件
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFFAFA"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/kuaidi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sec_market"
+            >
+            <ImageButton
+                android:id="@+id/kuaidi_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/aixin"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/kuaididailing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kuaidi_icon"
+                android:layout_centerHorizontal="true"
+                android:text="快递代领"
+                android:textColor="#080808"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/per_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+            <ImageButton
+                android:id="@+id/sch_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/chaoshi"
+                android:clickable="false"
+
+                />
+            <TextView
+                android:id="@+id/xiaoyuanchaoshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sch_icon"
+                android:layout_centerHorizontal="true"
+                android:text="校园超市"
+                android:textColor="#080808"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/sec_market"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/per_center"
+            >
+            <ImageButton
+                android:id="@+id/sec_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/second"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/ershoushichang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sec_icon"
+                android:layout_centerHorizontal="true"
+                android:text="二手市场"
+                android:textColor="#080808"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/waimai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+            <ImageButton
+                android:id="@+id/waimai_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/all"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/waimaidailing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waimai_icon"
+                android:layout_centerHorizontal="true"
+                android:text="外卖代领"
+                android:textColor="#080808"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sch_marcket"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/donation"
+            >
+
+
+
+            <ImageButton
+                android:id="@+id/per_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/touxiang"
+
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/gerenzhongxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/per_icon"
+                android:layout_centerHorizontal="true"
+                android:text="个人中心"
+                android:textSize="12sp"
+                android:textColor="#080808"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
