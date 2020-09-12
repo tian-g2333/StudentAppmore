@@ -7,7 +7,7 @@ import java.net.URLEncoder;
 
 public class UserService {
     public static boolean signIn(String name, String password) {
-        MyThread myThread = new MyThread("http://47.112.146.2:8080/MyWeb/SignIn",name,password);
+        MyThread myThread = new MyThread("http://8.129.48.153:8080/MyWeb/SignIn",name,password);
         try
         {
             myThread.start();
@@ -22,7 +22,7 @@ public class UserService {
     }
 
     public static boolean signUp(String name, String password) {
-        MyThread myThread = new MyThread("http://47.112.146.2:8080/MyWeb/SignUp",name,password);
+        MyThread myThread = new MyThread("http://8.129.48.153:8080/MyWeb/SignUp",name,password);
         try
         {
             myThread.start();
