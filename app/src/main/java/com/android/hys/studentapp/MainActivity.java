@@ -56,7 +56,11 @@ public class MainActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = ((EditText) findViewById(R.id.et_user)).getText().toString();
+
+                Intent intent = new Intent(MainActivity.this, Activity_LoginUp.class);
+                startActivity(intent);
+
+                /*String name = ((EditText) findViewById(R.id.et_user)).getText().toString();
                 String password = ((EditText) findViewById(R.id.et_pwd)).getText().toString();
                 if (UserService.signUp(name, password))
                     runOnUiThread(new Runnable() {
@@ -72,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "注册失败", Toast.LENGTH_SHORT).show();
                         }
                     });
-                }
+                }*/
             }
         });
 
