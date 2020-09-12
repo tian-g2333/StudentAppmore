@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String name = ((EditText) findViewById(R.id.et_user)).getText().toString();
                 String password = ((EditText) findViewById(R.id.et_pwd)).getText().toString();
-                if (UserService.signIn(name, password))
+                if (UserService.signIn(name, password,"0000"))
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
