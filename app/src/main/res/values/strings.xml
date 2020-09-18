@@ -39,5 +39,10 @@
         <string name="register_message">注册成功!</string>
         <string name="surface2_message">不能为空!</string>
 
+    <string name="title_home">快递代领</string>
+    <string name="title_dashboard">校园超市</string>
+    <string name="title_notifications">外卖代领</string>
+    <string name="title_person">个人中心</string>
+
 
 </resources>
