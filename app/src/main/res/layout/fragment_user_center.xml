@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/per_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/per_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg"
+
+                >
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/per_score"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/per_image"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF">
+                <ImageView
+                    android:id="@+id/per_iv_score"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/jifen"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/per_tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/per_iv_score"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:text="我的积分"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/per_tradedetail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/per_score"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF">
+                <ImageView
+                    android:id="@+id/per_iv_tradedetail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/jiaoyi"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/per_tv_tradedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/per_iv_tradedetail"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:text="历史订单"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/per_donatedetail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/per_tradedetail"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF">
+                <ImageView
+                    android:id="@+id/per_iv_donatedetail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/donate"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/per_tv_donatedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/per_iv_donatedetail"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:text="历史接单"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/per_modifyaddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/per_donatedetail"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF">
+                <ImageView
+                    android:id="@+id/per_iv_modifyaddress"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/address"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/per_tv_modifyaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/per_iv_modifyaddress"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:text="修改地址"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/per_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/per_modifyaddress"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/per_bt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textSize="23sp"
+                    android:background="#BFEFFF"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
