@@ -1,22 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment">
+    >
 
-    <TextView
-        android:id="@+id/text_notifications"
+    <RelativeLayout
+        android:id="@+id/don_four"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="150dp"
+        android:background="@mipmap/waimai">
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/don_four"
+        >
+
+        <RelativeLayout
+            android:id="@+id/don_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/waimaireve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:hint="请输入代取地址"
+                android:layout_marginTop="12dp"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/waimaifreve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:hint="请输入要送达外卖的宿舍或具体地址"
+                android:layout_below="@+id/waimaireve"
+                android:layout_marginTop="12dp"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/waimaidian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:hint="请输入外卖商家"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/waimaifreve"
+                android:lines="3"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/waimainame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:hint="请输入订餐昵称"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/waimaidian"
+                android:lines="3"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/waimainumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:hint="请输入订餐手机号后四位"
+                android:layout_marginTop="12dp"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/waimainame"
+                />
+
+            <Button
+                android:id="@+id/ensure_donate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waimainumber"
+                android:layout_margin="15dp"
+                android:background="#4EEE94"
+                android:text="提交"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
